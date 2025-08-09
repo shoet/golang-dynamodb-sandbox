@@ -6,12 +6,14 @@ toolchain go1.24.2
 
 require (
 	github.com/aws/aws-cdk-go/awscdk/v2 v2.199.0
+	github.com/aws/aws-sdk-go-v2 v1.37.2
 	github.com/aws/constructs-go/constructs/v10 v10.4.2
 	github.com/aws/jsii-runtime-go v1.112.0
 )
 
 require (
 	github.com/Masterminds/semver/v3 v3.3.1 // indirect
+	github.com/aws/smithy-go v1.22.5 // indirect
 	github.com/cdklabs/awscdk-asset-awscli-go/awscliv1/v2 v2.2.237 // indirect
 	github.com/cdklabs/awscdk-asset-node-proxy-agent-go/nodeproxyagentv6/v2 v2.1.0 // indirect
 	github.com/cdklabs/cloud-assembly-schema-go/awscdkcloudassemblyschema/v41 v41.2.0 // indirect

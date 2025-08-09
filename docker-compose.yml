@@ -1,0 +1,15 @@
+services:
+  localstack:
+    container_name: localstack
+    image: localstack/localstack
+    ports:
+      - "127.0.0.1:4566:4566"
+      - "127.0.0.1:4510-4559:4510-4559"
+    environment:
+      DOCKER_HOST: unix:///var/run/docker.sock
+      S3_TRUNCATE_KEYS: 1
+      PERSISTENCE: 1
+      AWS_ENDPOINT_URL: http://localstack:4566
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./tmp/localstack:/var/lib/localstack"
